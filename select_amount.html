@@ -1,0 +1,114 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@100;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="page2.css">
+  <title>Aid Colombian Children</title>
+  <link rel="shortcut icon" href="img/Website_logo.png" type="image/png">
+</head>
+
+<body>
+  <img src="img/Website_logo.png" id="logo_pay">
+
+  <section id="explanation">
+    <!--The section that explains what different bamount can do for different children-->
+    <h1>DONATE TODAY: SAVE A LIFE</h1>
+    <h3>Vulnerable children need you more than ever.</h3>
+    <h4>Your gift today can help make change that protects the lives of children,
+      families and their communities.</h4>
+    <ul>
+      <li>$300- can provide medical supplies for 6 children with malaria</li>
+
+      <li>$500- can provide medical supplies for 3 children with Dengue Fever</li>
+      <li>$1,000- can provide accomodation, drugs and food for one child who lost his/her parent during the conflict</li>
+
+    </ul>
+
+  </section>
+
+  <section id="amount_type">
+    <!--The section that contains button for different amounts-->
+    <h1>SELECT DONATION AMOUNT</h1>
+    <div id="button_container">
+      <button><a href="#payment_method">$250</a></button>
+      <button><a href="#payment_method">$500</a></button>
+      <button><a href="#payment_method">$1000</a></button>
+      <button><a href="#payment_method">$5000</a></button>
+      <button><a href="#payment_method">$10,000</a></button>
+      <button><a href="#payment_method">$20,000</a></button>
+      <button><a href="#payment_method">$50,000</a></button>
+      <button><a href="#payment_method">$100,000</a></button>
+    </div>
+
+
+  </section>
+
+
+
+  <section id="payment_method">
+    <!--The section that contains the different payment methods -->
+    <h1>SELECT YOUR PREFERRED PAYMENT METHOD</h1>
+
+
+
+    <div class="transfer_methods">
+      <img src="img/credit card_2.png">
+
+      <button onclick="openCC()">Card Payment</button>
+
+      <div class="CC_transfer">
+
+        <h2>Card information</h2>
+        <input type="text" placeholder="First name" required id="f_Name">
+        <input type="text" placeholder="Last name" required id="L_Name">
+        <br>
+        <input type="text" placeholder="Card Number" id="card_number" minlength="13" maxlength="19" required>
+
+
+
+
+        <input type="text" placeholder="Cvv" maxlength="3" required id="cvv">
+
+        <p>Expiration Date</p>
+        <input type="text" placeholder="03" maxlength="2" minlength="1" required id="month">
+        <input type="text" placeholder="2022" maxlength="4" minlength="4" required id="Year">
+
+        <br>
+
+
+        <button id="cc_button" onclick="validationn()">DONATE</button>
+
+        <p id="error_message"></p>
+        <p id="error_message_2"></p>
+        <p id="error_message_3"></p>
+
+
+
+
+
+
+
+
+      </div>
+
+      <p>If you would prefer to contribute by bank transfer,
+        please complete our <b> <a href="donation_form.pdf">Donation Form</a></b> and send to <b>donations@aidcolombianchildren.com</b> </p>
+
+ 
+    </div>
+
+
+
+
+  </section>
+
+</body>
+
+</html>
+
+<script src="main.js">
+
+</script>

@@ -1,0 +1,1403 @@
+body{
+    margin: none;
+    padding: none;
+    background-color: #FFF7FF;
+}
+
+/*begining of css code for orange bar before the navigation bar */
+
+/*css code for mobile design */
+
+@media only screen and (max-width: 600px){         /*css code for mobile design */
+#toppest{
+    color: white;
+    background-color:#FF4800;
+   height: 100px;
+    width: 100%;
+ 
+}
+
+#toppest p{
+    display: none;
+    padding-left: 10%;
+}
+#toppest button{
+    background-color:#262222;  
+   margin-left: calc( (100% - 200px)/2); 
+   margin-top:  calc( (100px - 50px)/2); 
+width: 200px;
+height: 50px;
+color: white;
+}
+#toppest button a{
+color: white;
+text-decoration: none;
+font-family: "Fira Sans Condensed";
+font-size: 12px;
+}
+
+/*End of css code for orange bar before the navigation bar */
+
+
+
+
+/*Begining of code for navigation bar*/
+
+nav{
+    display: flex;
+    height: 100px;
+    background-color: white;
+}
+
+#logo{
+    flex: 40%;
+    margin-left: 20px;
+   
+
+}
+#logo img{
+  width: 60px;
+  height: 62px;
+  padding-top:  calc( (100px - 62px)/2);
+  padding-left: 5%; 
+    }
+    
+#nav_list{
+  
+    display: none;
+}
+#charity_menu_bar{
+    display: block;
+    padding-right: 5%;
+    padding-top: calc( (100px - 50px)/2); 
+}
+
+/*End of code for navigation bar*/
+
+
+.box-menu{
+width: 120px;
+height: 150px;
+background-color: #4369B6;
+margin-top: -20px;
+border-bottom-left-radius: 10%;
+display: none;
+opacity: 0;
+max-height: 0;
+margin-left: calc(100% - 120px);
+transition: all 0.4s;
+}
+
+
+.box-menu ul{
+        
+list-style: none;
+padding-left: 5px;
+}
+
+.box-menu ul li{
+padding-top: 8px;
+padding-left: 10px;
+        
+}
+
+.box-menu ul li a{
+        text-decoration: none;
+        
+        color: white;
+        font-family: "Fira Sans Condensed";
+        font-weight: 600;
+        } 
+.open{
+display: block;
+max-height: 150px;
+opacity: 1;
+            
+}   
+            
+        
+/*begining of charity image section*/
+
+#charity_image{
+    width: 100%;
+    height: 300px;
+background-image: url('img/charity_image_mobile.jpg');
+background-size: cover;
+
+}
+#charity_image h1{
+color: #FF5A00;
+text-align: center;
+font-family: "Fira Sans Condensed";
+font-weight: 600;
+padding-top: 100px;
+}
+#charity_image button{
+    
+    background-image: -webkit-linear-gradient(45deg,  #2117E6, #560DFC,#C207F5);
+    background-image: -moz-linear-gradient(45deg, #2117E6, #560DFC,#C207F5);
+    background-image: -o-linear-gradient(45deg, #2117E6, #560DFC,#C207F5);
+	background-image:linear-gradient(45deg, #2117E6,#560DFC,#C207F5);
+    
+    color: white;
+    border-radius: 20px;
+    width: 150px;
+    height: 40px;
+    border: none;
+    margin-left: calc( (100% - 150px) / 2)
+    }
+#charity_image button a{
+        color: white;
+        font-family: "Fira Sans Condensed";
+        font-weight: 600;
+        text-decoration: none;
+}
+
+/*End of charity image section*/
+
+
+/*Begining of about us section*/
+#about_us{
+margin-top: 50px;
+background-image: url('img/charity_about_us_background.jpg');
+width: 100%;
+height: 650px;
+background-size: cover;
+}
+#about_us h1{
+color: white;
+font-family: "Fira Sans Condensed";
+font-weight: 600;
+text-align: center;
+padding-top: 30px;    
+}
+#about_us  p{
+    color: white;
+    font-family: "Fira Sans Condensed";
+    font-size: 12px;
+    font-weight: 400;
+    display: block;
+    padding: 30px 20px 0px 20px;  
+    line-height: 23px;
+}
+/*End of about us section*/
+
+/*Begining of causes section*/
+
+#causes{
+background-image: linear-gradient(45deg,#171961, #12145E);
+height: 2000px;
+
+}
+#causes h1{
+color: white;
+font-family: "Fira Sans Condensed";
+font-weight: 600;
+text-align: center;
+padding-top: 30px
+}
+.cause{
+    margin: 40px 5px 10px 5px;
+    border: 1px orange solid;
+    padding: 10px 15px 10px 15px
+}
+.cause img{
+ height: 200px;
+ width: 250px;
+ margin-left: calc( (100% - 250px) / 2);
+
+}
+.cause h3{
+color: white;
+font-family: "Fira Sans Condensed";
+font-weight: 600;
+text-align: center;
+padding-bottom: 20px;
+}
+.progress_container{
+    border-radius: 30px;
+    width: 200px;
+    height: 5px;
+    border: 2px solid black;
+    display: flex;
+    background-color: gray;
+margin-left: 10px
+    }
+.progress_bar{
+        height: 100%;
+       width: 26%;
+        background-color: #FF5A00;
+     
+      text-align: center;
+      color: white;
+      
+    }
+    .progress_circle{
+        background-color: #FF5A00;
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        text-align: center;
+        margin-left: -8px;
+        margin-top: calc((5px - 30px)/2);
+        color: white;
+        font-size: 12px;
+        padding-top: calc((25px - 13px)/2);
+        font-family: "Fira Sans Condensed";
+        font-weight: 600;
+    }
+   
+
+.goal_text{
+    color: white;
+    font-family: "Fira Sans Condensed";
+    font-weight: 400;
+    font-size: 15px;
+    
+    display: flex;
+}
+
+.goal_text :first-child{
+padding-left: 10px;
+padding-top: 10px;
+}
+.goal_text :last-child{
+    padding-left: 120px;
+    padding-top: 10px;
+}
+
+
+#cause_2 .progress_bar{
+    height: 100%;
+   width: 32%;
+    background-color: #FF5A00;
+ 
+  text-align: center;
+  color: white;
+  
+}
+#cause_3 .progress_bar{
+    height: 100%;
+   width: 19%;
+    background-color: #FF5A00;
+ 
+  text-align: center;
+  color: white;
+  
+}
+.cause p{
+    color: white;
+    font-family: "Fira Sans Condensed";
+    font-weight: 400;
+    font-size: 12px;
+    display: block;
+    padding: 10px 10px 20px 10px;
+}
+
+
+
+
+
+
+/*End of causes section*/
+
+/*  End of causes code*/ 
+
+
+#help_save{
+    background-image: linear-gradient(45deg,#171961, #12145E);
+    width: 100%;
+    height: 1800px;
+    margin-top: 50px;
+   
+
+
+}
+#help_save h2{
+    color: white;
+    font-family: "Fira Sans Condensed";
+    font-weight: 600; 
+    text-align: center;
+    margin-top: 100px;
+    padding-top: 20px;
+}
+#help_save h3{
+    color: white;
+    font-family: "Fira Sans Condensed";
+    font-weight: 600; 
+    text-align: center;
+    padding-top: 10px;
+}
+
+#help_save p{
+    color: white;
+    font-family: "Fira Sans Condensed";
+    font-weight: 400;   
+}
+#help_save_div{
+
+    padding-top: 30px;
+
+}
+
+.save_child{
+  
+    padding: 20px 25px;
+    border: 1px solid orangered;
+    margin: 20px 5px 0px 5px;
+
+}
+.save_child img{
+    height:250px;
+     width:250px; 
+     padding-left: calc((100% - 250px)/2);   
+}
+.save_child button{
+    background-color: orangered;
+    color: white;
+    border-radius: 20px;
+    border-style: none;
+    margin-top: 10px;
+    height: 30px;
+    width: 150px;
+    margin-left: calc((100% - 150px)/2);
+}
+.save_child button a{
+color: white;
+text-decoration: none;
+font-family: "Fira Sans Condensed";
+font-weight: 400;
+
+}
+ /* End of code for help save*/ 
+
+
+  
+/*Begining of video section*/
+
+video{
+    display: block;
+    margin: 20px auto;
+    width: 80%;
+    height: calc(0.5624*80vw);
+    
+    
+    
+    
+    }
+
+ 
+ 
+ 
+ 
+  
+/*End of video section*/
+ 
+/*  Begining of footer code*/ 
+ footer{
+background-color: #1B1A45;
+margin-top: 100px;
+
+
+}
+#about_us_footer img{
+padding-top: 30px;
+margin-left: calc((100% - 60px) / 2);    
+width: 60px;
+height: 62px;   
+
+}
+#about_us_footer p{
+    color: white;
+    font-family: "Fira Sans Condensed";
+    font-weight: 400;
+    font-size: 13px;
+    display: block;
+    padding-left: 20px;
+
+}
+#footer_links h1{
+    font-family: "Fira Sans Condensed";
+    font-weight: 600;
+    color: white;
+padding-left: 30px;
+}
+#footer_links ul li{
+    text-decoration: none;
+   display: block;
+    margin-right: 60px;
+    padding-top: 20px;
+}
+#footer_links ul li a{
+text-decoration: none;
+font-size: 15px;
+font-family: "Fira Sans Condensed";
+font-weight: 400;
+color: white;
+
+}
+#contact_us_footer h1{
+    font-family: "Fira Sans Condensed";
+    font-weight: 600;
+    color: white;
+padding-left: 30px;
+padding-top: 30px;
+}
+#contact_us_footer p{
+    color: white;
+    font-family: "Fira Sans Condensed";
+    font-weight: 400;
+    font-size: 13px;
+    display: block;
+    padding-left: 20px;
+       
+}
+
+#copyright{
+    font-family: "Fira Sans Condensed";
+    font-weight: 400;
+    color: white;
+    text-align: center; 
+   font-size: 15px;
+    padding: 30px 10px;
+
+}
+/*End of footer section*/
+}
+
+ /*Begining of code for desktop version*/   
+
+ @media only screen and (min-width: 1200px){
+    body{
+        margin: none;
+        padding: none;
+        background-color: #FFF7FF;
+    }
+    /*begining of css code for orange bar before the navigation bar */
+    #toppest{
+        color: white;
+        background-color:#FF4800;
+       height: 100px;
+        width: 100%;
+     
+    }
+    
+    #toppest p{
+        color: white;
+        display: inline-block;
+        padding-left: 10%;
+        font-family: "Fira Sans Condensed";
+font-weight: 600;
+    }
+    #toppest button{
+        margin-top:  calc( (100px - 50px)/2);
+        background-color:#262222;  
+      margin-left: 40%;
+    width: 200px;
+    height: 50px;
+    color: white;
+    }
+    #toppest button a{
+    color: white;
+    text-decoration: none;
+    font-family: "Fira Sans Condensed";
+    font-size: 12px;
+    }
+    
+    /*End of css code for orange bar before the navigation bar */
+    
+/*Begining of code for navigation bar*/
+
+nav{
+    display: flex;
+    height: 100px;
+    background-color: white;
+}
+
+#logo{
+    flex: 40%;
+    margin-left: 20px;
+   
+
+}
+#logo img{
+  width: 60px;
+  height: 62px;
+  padding-top:  calc( (100px - 62px)/2);
+  padding-left: 5%; 
+    }
+
+#nav_list{
+    flex: 60%;
+    display: inline;
+}
+#nav_list ul li{
+    text-decoration: none;
+    display: inline-block;
+    padding-left: 60px;
+    padding-top: 30px;
+}
+#nav_list ul li a{
+    text-decoration: none;
+    color: black;
+    display: flex;
+    font-family: "Fira Sans Condensed";
+font-weight: 600;
+font-size: 16px;
+
+}
+#charity_menu_bar{
+display: none;
+
+}
+/*End of code for navigation bar*/
+
+.box-menu{
+
+    display: none;
+   
+      
+}
+
+/*begining of charity image section*/
+
+#charity_image{
+    width: 100%;
+    height: 500px;
+background-image: url('img/charity_image_desktop.jpg');
+background-size: cover;
+
+}
+#charity_image h1{
+color: #FF5A00;
+text-align: center;
+font-family: "Fira Sans Condensed";
+font-weight: 600;
+padding-top: 100px;
+font-size:45px;
+}
+#charity_image button{
+    
+    background-image: -webkit-linear-gradient(45deg,  #2117E6, #560DFC,#C207F5);
+    background-image: -moz-linear-gradient(45deg, #2117E6, #560DFC,#C207F5);
+    background-image: -o-linear-gradient(45deg, #2117E6, #560DFC,#C207F5);
+	background-image:linear-gradient(45deg, #2117E6,#560DFC,#C207F5);
+    
+    color: white;
+    border-radius: 20px;
+    width: 250px;
+    height: 50px;
+    border: none;
+    margin-left: calc( (100% - 250px) / 2);
+    margin-top: 40px;
+    }
+#charity_image button a{
+        color: white;
+        font-family: "Fira Sans Condensed";
+        font-weight: 600;
+        text-decoration: none;
+        font-size: 20px;
+}
+
+/*End of charity image section*/
+
+
+/*Begining of about us section*/
+#about_us{
+    margin-top: 50px;
+    background-image: url('img/charity_about_us_background.jpg');
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    }
+    #about_us h1{
+    color: white;
+    font-family: "Fira Sans Condensed";
+    font-weight: 600;
+    text-align: center;
+    padding-top: 30px; 
+    font-size: 40px;   
+    }
+    #about_us  p{
+        color: white;
+        font-family: "Fira Sans Condensed";
+        font-size: 16px;
+        font-weight: 400;
+        display: block;
+        padding: 40px 30px 0px 30px;  
+        line-height: 23px;
+    }
+    /*End of about us section*/
+    
+/*Begining of causes section*/
+
+#causes{
+    background-image: linear-gradient(45deg,#171961, #12145E);
+    height: 700px;
+    
+    }
+    #causes_div{
+        display: flex;
+       
+    }   
+
+
+
+
+
+    #causes h1{
+    color: white;
+    font-family: "Fira Sans Condensed";
+    font-weight: 600;
+    text-align: center;
+    padding-top: 30px;
+    font-size: 40px;
+    }
+    .cause{
+    
+        margin: 40px 0px 40px 15px ;
+       flex: 300px;
+   
+    outline: 1px orange solid;
+    padding: 10px 15px 10px 15px;
+    }
+    .cause:last-child{
+       margin-right: 15px; 
+    }
+    .cause img{
+     height: 200px;
+     width: 300px;
+  padding-left: calc((100% - 300px) / 2);
+    
+    }
+    .cause h3{
+    color: white;
+    font-family: "Fira Sans Condensed";
+    font-weight: 600;
+    text-align: center;
+    
+    }
+
+    .progress_container{
+        border-radius: 30px;
+        width: 200px;
+        height: 5px;
+        border: 2px solid black;
+        display: flex;
+        background-color: gray;
+    margin-left: 10px
+        }
+    .progress_bar{
+            height: 100%;
+           width: 26%;
+            background-color: #FF5A00;
+         
+          text-align: center;
+          color: white;
+          
+        }
+        .progress_circle{
+            background-color: #FF5A00;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            text-align: center;
+            margin-left: -8px;
+            margin-top: calc((5px - 30px)/2);
+            color: white;
+            font-size: 12px;
+            padding-top: calc((25px - 13px)/2);
+            font-family: "Fira Sans Condensed";
+            font-weight: 600;
+        }
+       
+    
+    .goal_text{
+        color: white;
+        font-family: "Fira Sans Condensed";
+        font-weight: 400;
+        font-size: 15px;
+        
+        display: flex;
+    }
+    
+    .goal_text :first-child{
+    padding-left: 10px;
+    padding-top: 10px;
+    }
+    .goal_text :last-child{
+        padding-left: 120px;
+        padding-top: 10px;
+    }
+    
+    
+    #cause_2 .progress_bar{
+        height: 100%;
+       width: 32%;
+        background-color: #FF5A00;
+     
+      text-align: center;
+      color: white;
+      
+    }
+    #cause_3 .progress_bar{
+        height: 100%;
+       width: 19%;
+        background-color: #FF5A00;
+     
+      text-align: center;
+      color: white;
+      
+    }
+
+.cause p{
+        color: white;
+        font-family: "Fira Sans Condensed";
+        font-weight: 400;
+        font-size: 12px;
+        display: block;
+        padding: 10px 10px 20px 10px;
+    }
+    /*End of causes section*/
+     
+    
+    /*Begining of causes section*/
+    #help_save{
+        background-image: linear-gradient(45deg,#171961, #12145E);
+        width: 100%;
+        height: 900px;
+        margin-top: 50px;
+      
+    
+    
+    }
+    #help_save h2{
+        color: white;
+        font-family: "Fira Sans Condensed";
+        font-weight: 600; 
+        text-align: center;
+        margin-top: 100px;
+        padding-top: 20px;
+    }
+    #help_save h3{
+        color: white;
+        font-family: "Fira Sans Condensed";
+        font-weight: 600; 
+        text-align: center;
+        padding-top: 10px;
+    }
+    
+    
+    #help_save_div{
+    display: flex;
+        padding-top: 30px;
+    
+    }
+    
+    .save_child{
+      
+        flex:350px;
+        border: 1px orangered solid;
+    padding: 30px 35px;
+    margin-left: 20px;
+    }
+    .save_child:last-child{
+     margin-right: 20px; 
+    }
+    .save_child img{
+        height:250px;
+         width:250px; 
+         padding-left: calc((100% - 250px)/2);   
+    }
+    .save_child p{
+        color: white;
+        font-family: "Fira Sans Condensed";
+        font-weight: 400; 
+        font-size: 15px;
+        display: block;  
+    }
+    .save_child button{
+        background-color: orangered;
+        color: white;
+        border-radius: 20px;
+        margin-top: 10px;
+        height: 30px;
+        width: 150px;
+        margin-left: calc((100% - 150px)/2);
+    }
+    .save_child button a{
+    color: white;
+    text-decoration: none;
+    font-family: "Fira Sans Condensed";
+    font-weight: 400;
+    
+    }
+     /* End of code for help save*/ 
+
+video{
+        display: block;
+        margin: 20px auto;
+        width: 80%;
+        height: calc(0.5624*80vw);
+    }
+/*  Begining of footer code*/ 
+
+footer{
+    background-color:#1B1A45;
+    width: 100%;
+    height: 400px;
+    color: white;
+    
+   
+}
+#footer_div{
+    display: flex;
+    justify-content: space-between;
+}
+#about_us_footer{               /*  CSS code that of about the company written in the footer*/ 
+   
+    flex: 25%;
+margin-left: 30px;
+
+}
+#about_us_footer img{               /* website logo in the footer*/ 
+padding-top: 40px;
+margin-left: 30px;
+width: 100px;
+height: 102px;
+}
+#about_us_footer p{
+    font-family: "Fira Sans Condensed";
+    font-weight: 600;
+    color: white;
+    padding-top: 30px;
+}
+#footer_links{
+    flex: 25%;
+padding: 40px 30px 0px 0px;
+}
+
+
+#footer_links h1{                               /*  CSS code for useful links in footer*/ 
+    font-family: "Fira Sans Condensed";
+    font-weight: 600;
+   
+    margin-top: 20px;
+}
+#footer_links ul li{
+    text-decoration: none;
+   display: block;
+    margin-right: 60px;
+    padding-top: 20px;
+}
+#footer_links ul li a{
+text-decoration: none;
+font-size: 16px;
+font-family: "Fira Sans Condensed";
+font-weight: 400;
+color: white;
+
+}
+
+#contact_us_footer{
+margin-left: 40px;
+flex: 25%;
+}
+#contact_us_footer h1{
+    font-family: "Fira Sans Condensed";
+    font-weight: 600;
+    color: white;
+
+padding-top: 30px;
+}
+#contact_us_footer p{
+    color: white;
+    font-family: "Fira Sans Condensed";
+    font-weight: 400;
+    font-size: 13px;
+    display: block;
+   
+       
+}
+
+#copyright{
+    font-family: "Fira Sans Condensed";
+    font-weight: 400;
+    color: white;
+    text-align: center; 
+   font-size: 15px;
+    padding: 50px 0px 20px 0px;
+
+}
+
+}
+ /* code for tablet*/ 
+
+@media only screen and (min-width: 601px) and (max-width: 1199px) {                  
+    body{
+        margin: none;
+        padding: none;
+        background-color: #FFF7FF;
+    }
+    /*begining of css code for orange bar before the navigation bar */
+    #toppest{
+        color: white;
+        background-color:#FF4800;
+       height: 100px;
+        width: 100%;
+     
+    }
+    
+    #toppest p{
+        display: none;
+        padding-left: 10%;
+    }
+    #toppest button{
+        background-color:#262222;  
+       margin-left: calc( (100% - 200px)/2); 
+       margin-top:  calc( (100px - 50px)/2); 
+    width: 200px;
+    height: 50px;
+    color: white;
+    }
+    #toppest button a{
+    color: white;
+    text-decoration: none;
+    font-family: "Fira Sans Condensed";
+    font-size: 12px;
+    }
+
+
+/*Begining of code for navigation bar*/
+
+nav{
+    display: flex;
+    height: 100px;
+    background-color: white;
+}
+
+#logo{
+    flex: 40%;
+    margin-left: 20px;
+   
+
+}
+#logo img{
+  width: 60px;
+  height: 62px;
+  padding-top:  calc( (100px - 62px)/2);
+  padding-left: 5%; 
+    }
+
+#nav_list{
+    flex: 60%;
+    display: inline;
+}
+#nav_list ul li{
+    text-decoration: none;
+    display: inline-block;
+    padding-left: 30px;
+    padding-top: 30px;
+}
+#nav_list ul li a{
+    text-decoration: none;
+    color: black;
+    display: flex;
+    font-family: "Fira Sans Condensed";
+font-weight: 600;
+font-size: 14px;
+
+}
+#charity_menu_bar{
+display: none;
+
+}
+/*End of code for navigation bar*/
+
+.box-menu{
+
+    display: none;
+   
+      
+}
+
+/*begining of charity image section*/
+
+#charity_image{
+    width: 100%;
+    height: 500px;
+background-image: url('img/charity_image_tablet.jpg');
+background-size: cover;
+
+}
+#charity_image h1{
+color: #FF5A00;
+text-align: center;
+font-family: "Fira Sans Condensed";
+font-weight: 600;
+padding-top: 100px;
+font-size:45px;
+}
+#charity_image button{
+     
+    background-image: -webkit-linear-gradient(45deg,  #2117E6, #560DFC,#C207F5);
+    background-image: -moz-linear-gradient(45deg, #2117E6, #560DFC,#C207F5);
+    background-image: -o-linear-gradient(45deg, #2117E6, #560DFC,#C207F5);
+	background-image:linear-gradient(45deg, #2117E6,#560DFC,#C207F5);
+    
+    color: white;
+    border-radius: 20px;
+    width: 250px;
+    height: 50px;
+    border: none;
+    margin-left: calc( (100% - 250px) / 2);
+    margin-top: 40px;
+    }
+#charity_image button a{
+        color: white;
+        font-family: "Fira Sans Condensed";
+        font-weight: 600;
+        text-decoration: none;
+        font-size: 20px;
+}
+
+/*End of charity image section*/
+
+/*Begining of about us section*/
+#about_us{
+    margin-top: 100px;
+    background-image: url('img/charity_about_us_background.jpg');
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    }
+    #about_us h1{
+    color: white;
+    font-family: "Fira Sans Condensed";
+    font-weight: 600;
+    text-align: center;
+    padding-top: 30px; 
+    font-size: 40px;   
+    }
+    #about_us  p{
+        color: white;
+        font-family: "Fira Sans Condensed";
+        font-size: 16px;
+        font-weight: 400;
+        display: block;
+        padding: 40px 30px 0px 30px;  
+        line-height: 23px;
+    }
+    /*End of about us section*/
+
+/*Begining of causes section*/
+
+#causes{
+    background-image: linear-gradient(45deg,#171961, #12145E);
+    height: 1500px;
+    
+    }
+    #causes_div{
+        display: grid;
+        grid-template-columns: 40% 40%;
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+    }   
+
+
+
+
+
+    #causes h1{
+    color: white;
+    font-family: "Fira Sans Condensed";
+    font-weight: 600;
+    text-align: center;
+    padding-top: 30px;
+    font-size: 40px;
+    }
+    .cause{
+     padding: 20px 20px;
+      margin-left: 10%;
+      border: 1px orange solid;
+    }
+    .cause img{
+     height: 200px;
+     width: 250px;
+  
+    padding-left: calc((100% - 250px) / 2);
+    }
+    .cause h3{
+    color: white;
+    font-family: "Fira Sans Condensed";
+    font-weight: 600;
+    text-align: center;
+    
+    }
+
+    .progress_container{
+        border-radius: 30px;
+        width: 200px;
+        height: 5px;
+        border: 2px solid black;
+        display: flex;
+        background-color: gray;
+    margin-left: 10px
+        }
+    .progress_bar{
+            height: 100%;
+           width: 26%;
+            background-color: #FF5A00;
+         
+          text-align: center;
+          color: white;
+          
+        }
+        .progress_circle{
+            background-color: #FF5A00;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            text-align: center;
+            margin-left: -8px;
+            margin-top: calc((5px - 30px)/2);
+            color: white;
+            font-size: 12px;
+            padding-top: calc((25px - 13px)/2);
+            font-family: "Fira Sans Condensed";
+            font-weight: 600;
+        }
+       
+    
+    .goal_text{
+        color: white;
+        font-family: "Fira Sans Condensed";
+        font-weight: 400;
+        font-size: 15px;
+        
+        display: flex;
+    }
+    
+    .goal_text :first-child{
+    padding-left: 10px;
+    padding-top: 10px;
+    }
+    .goal_text :last-child{
+        padding-left: 120px;
+        padding-top: 10px;
+    }
+    
+    
+    #cause_2 .progress_bar{
+        height: 100%;
+       width: 32%;
+        background-color: #FF5A00;
+     
+      text-align: center;
+      color: white;
+      
+    }
+    #cause_3 .progress_bar{
+        height: 100%;
+       width: 19%;
+        background-color: #FF5A00;
+     
+      text-align: center;
+      color: white;
+      
+    }
+.cause  p{
+ 
+       
+        color: white;
+        font-family: "Fira Sans Condensed";
+        font-weight: 400;
+        font-size: 12px;
+        display: block;
+      
+    }
+    /*End of causes section*/
+
+/*Begining of helpsave code for tablet*/
+#help_save{
+    background-image: linear-gradient(45deg,#171961, #12145E);
+    width: 100%;
+    height: 1200px;
+    margin-top: 50px;
+  }
+
+  #help_save h2{
+    color: white;
+    font-family: "Fira Sans Condensed";
+    font-weight: 600; 
+    text-align: center;
+    margin-top: 100px;
+    padding-top: 20px;
+}
+#help_save h3{
+    color: white;
+    font-family: "Fira Sans Condensed";
+    font-weight: 600; 
+    text-align: center;
+    padding-top: 10px;
+} 
+#help_save_div{
+    display: grid;
+    grid-template-columns: 40% 40%;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    
+    }
+    .save_child{
+        border: 1px orange solid; 
+        padding: 20px 20px; 
+        margin-left: 25px; 
+    }
+    .save_child img{
+        height:250px;
+         width:250px; 
+         padding-left: calc((100% - 250px)/2);   
+    }
+    .save_child p{
+        color: white;
+        font-family: "Fira Sans Condensed";
+        font-weight: 400; 
+        font-size: 13px;
+        display: block;  
+    }
+    .save_child button{
+        background-color: orange;
+        color: white;
+        border-radius: 20px;
+        margin-top: 10px;
+        height: 30px;
+        width: 150px;
+        margin-left: calc((100% - 150px)/2);
+    }
+    .save_child button a{
+    color: white;
+    text-decoration: none;
+    font-family: "Fira Sans Condensed";
+    font-weight: 400;
+    
+    }
+
+/*End of help save code for tablet*/
+
+
+video{
+    display: block;
+    margin: 20px auto;
+    width: 80%;
+    height: calc(0.5624*80vw);
+    
+    
+    
+    
+    }
+
+
+
+
+
+
+
+
+/*  Begining of footer code*/ 
+
+footer{
+    background-color:#1B1A45;
+    width: 100%;
+    height: 400px;
+    color: white;
+    
+   
+}
+#footer_div{
+    display: flex;
+    justify-content: space-between;
+}
+#about_us_footer{               /*  CSS code that of about the company written in the footer*/ 
+   
+    flex: 25%;
+margin-left: 30px;
+
+}
+#about_us_footer img{               /* website logo in the footer*/ 
+padding-top: 40px;
+margin-left: 30px;
+width: 100px;
+height: 102px;
+}
+#about_us_footer p{
+    font-family: "Fira Sans Condensed";
+    font-weight: 600;
+    color: white;
+    padding-top: 30px;
+}
+
+
+#footer_links{
+    flex: 25%;
+padding: 40px 30px 0px 0px;
+}
+
+
+#footer_links h1{                               /*  CSS code for useful links in footer*/ 
+    font-family: "Fira Sans Condensed";
+    font-weight: 600;
+   
+    margin-top: 20px;
+}
+#footer_links ul li{
+    text-decoration: none;
+   display: block;
+    margin-right: 60px;
+    padding-top: 20px;
+}
+#footer_links ul li a{
+text-decoration: none;
+font-size: 13px;
+font-family: "Fira Sans Condensed";
+font-weight: 400;
+color: white;
+
+}
+
+#contact_us_footer{
+margin-left: 40px;
+flex: 25%;
+}
+#contact_us_footer h1{
+    font-family: "Fira Sans Condensed";
+    font-weight: 600;
+    color: white;
+
+padding-top: 30px;
+}
+#contact_us_footer p{
+    color: white;
+    font-family: "Fira Sans Condensed";
+    font-weight: 400;
+    font-size: 13px;
+    display: block;
+   
+       
+}
+
+#copyright{
+    font-family: "Fira Sans Condensed";
+    font-weight: 400;
+    color: white;
+    text-align: center; 
+   font-size: 15px;
+    padding: 50px 0px 20px 0px;
+
+}
+
+
+
+
+
+
+}
